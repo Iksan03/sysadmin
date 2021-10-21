@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KedaiAPP lite - Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body class="dashboard">
+    <nav class="navbar navbar-light" style="background-color: #66B5E1; box-shadow: 0px 2px 4px rgba(0,0,0,0.5);">
+        <a class="navbar-brand">
+            <h3 class=" font-weight-bold text-white">KeDai App lite</h3>
+        </a>
+        <form class="form-inline">
+            <img src="img/admin.svg">
+            <span class="ml-sm-2 mr-sm-4" id="admin">Kedai APP Admin</span>
+            <a href="login.htm"><img src="img/signout.svg" alt=""></a>
+        </form>
+    </nav>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <div class="sidebar-header">
+                <h3>Navigation</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="dashboard.htm"> <img src="img/dashboard2.svg" alt="" class="mr-3">Dashboard</a>
+                </li>
+                <li>
+                    <a href="blog.htm"> <img src="img/blog.svg" alt="" class="mr-3">Blog</a>
+                </li>
+
+                <li>
+                    <a href="ebook.htm"> <img src="img/ebook.svg" alt="" class="mr-3">Ebook</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid button">
+                    <button type="button" id="sidebarCollapse" class="btn  btn-sky"><i class="fas fa-align-left"></i>
+                    </button>
+                </div>
+            </nav>
+            <br>
+            <h2 class=" font-weight-bold">Dashboard</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Blog</h5>
+                            <h5 class="card-text font-weight-bold">0</h5>
+                            <p class="card-text">Blog yang sudah di upload</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Ebook</h5>
+                            <h5 class="card-text font-weight-bold">0</h5>
+                            <p class="card-text">Ebook yang sudah di upload</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.slim.min.js"></script>
+    <script src="js/pooper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
